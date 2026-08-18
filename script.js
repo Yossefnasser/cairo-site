@@ -89,3 +89,71 @@ window.addEventListener('scroll', () => {
     }
   });
 });
+
+// Theme Toggle Functionality
+const themeToggle = document.getElementById('theme-toggle');
+const html = document.documentElement;
+
+// Check for saved theme preference
+const savedTheme = localStorage.getItem('theme') || 'light';
+html.setAttribute('data-theme', savedTheme);
+updateThemeIcon(savedTheme);
+
+function updateThemeIcon(theme) {
+  const icon = themeToggle.querySelector('i');
+  if (theme === 'dark') {
+    icon.className = 'fas fa-sun';
+  } else {
+    icon.className = 'fas fa-moon';
+  }
+}
+
+themeToggle.addEventListener('click', () => {
+  const currentTheme = html.getAttribute('data-theme');
+  const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+  html.setAttribute('data-theme', newTheme);
+  localStorage.setItem('theme', newTheme);
+  updateThemeIcon(newTheme);
+});
+
+
+// Add additional content sections
+function addAdditionalContent() {
+  const projectsSection = document.querySelector('#projects');
+  if (projectsSection) {
+    const additionalContent = document.createElement('section');
+    additionalContent.className = 'commitment-section';
+    additionalContent.id = 'commitment';
+    additionalContent.innerHTML = `
+      <div class="container">
+        <h2 class="section-title">Our Commitment to Excellence</h2>
+        <p class="commitment-text">At Cairo International, we combine traditional craftsmanship with modern innovation to deliver projects that stand the test of time. Our dedicated team of architects, engineers, and craftsmen work collaboratively to ensure every detail is perfect.</p>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-number">50+</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">200+</div>
+            <div class="stat-label">Projects Completed</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">98%</div>
+            <div class="stat-label">Client Satisfaction</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">150+</div>
+            <div class="stat-label">Expert Staff</div>
+          </div>
+        </div>
+      </div>
+    `;
+    projectsSection.after(additionalContent);
+  }
+}
+
+// Initialize additional content on page load
+window.addEventListener('load', () => {
+  addAdditionalContent();
+});
