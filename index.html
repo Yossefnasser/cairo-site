@@ -1,35 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cairo International for Contracting & Architecture</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo">
-                <i class="fas fa-building"></i>
-                <span>Cairo International</span>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="mobile-menu">
-                <i class="fas fa-bars"></i>
-            </div>
-            <button class="theme-toggle" id="theme-toggle">
-                <i class="fas fa-moon"></i>
-            </button>
-        </div>
-    </nav>
+    <div data-include="includes/navbar.html"></div>
 
     <!-- Hero Section -->
     <section id="hero" class="hero">
@@ -37,7 +21,7 @@
             <h1>Cairo International for Contracting & Architecture</h1>
             <p class="tagline">Architecture, Contracting, Facades & Specialized Manufacturing</p>
             <p class="description">
-                A multidisciplinary company specializing in architecture, contracting, wood manufacturing, 
+                A multidisciplinary company specializing in architecture, contracting, wood manufacturing,
                 curtain walls, facades, and comprehensive commercial projects across Egypt.
             </p>
             <div class="hero-buttons">
@@ -47,34 +31,38 @@
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
+
+    <!-- Partners Section -->
+    <section class="partners">
         <div class="container">
-            <h2>About Us</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        Cairo International for Contracting & Architecture is a leading multidisciplinary company 
-                        dedicated to delivering exceptional architecture, contracting, and specialized manufacturing 
-                        solutions across Egypt and the Middle East region.
-                    </p>
-                    <p>
-                        Our expertise spans across multiple disciplines including architectural design, general contracting, 
-                        wood manufacturing, curtain wall systems, facade engineering, and comprehensive commercial 
-                        project development. We combine technical excellence with creative innovation to create 
-                        sustainable, functional, and aesthetically pleasing built environments.
-                    </p>
-                    <p>
-                        With years of experience in the construction industry, we have established ourselves as 
-                        a trusted partner for both public and private sector projects, consistently delivering 
-                        on time and within budget while maintaining the highest standards of quality and safety.
-                    </p>
-                </div>
-                <div class="about-image">
-                    <div class="image-placeholder">
-                        <img src="images/company-facility.jpg" alt="Company Facility" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
-                        <i class="fas fa-city"></i>
-                        <span>Company Facility</span>
+            <h2>Our Partners</h2>
+            <div class="logo-slider">
+                <div class="logo-track">
+                    <!-- Logos are duplicated to create a seamless loop -->
+                    <div class="logo-item"><img src="images/mountain-view-logo.png" alt="Partner 1">
+                    </div>
+                    <div class="logo-item"><img src="images/mountain-view-logo.png" alt="Partner 2">
+                    </div>
+                    <div class="logo-item"><img src="images/mountain-view-logo.png" alt="Partner 3">
+                    </div>
+                    <div class="logo-item"><img src="images/mountain-view-logo.png" alt="Partner 4">
+                    </div>
+                    <div class="logo-item"><img src="images/mountain-view-logo.png" alt="Partner 5">
+                    </div>
+                    <div class="logo-item"><img src="images/mountain-view-logo.png" alt="Partner 6">
+                    </div>
+                    <!-- Duplicate set for seamless loop -->
+                    <div class="logo-item"><img src="images/mountain-view-logo.png" alt="Partner 1">
+                    </div>
+                    <div class="logo-item"><img src="images/mountain-view-logo.png" alt="Partner 2">
+                    </div>
+                    <div class="logo-item"><img src="images/mountain-view-logo.png" alt="Partner 3">
+                    </div>
+                    <div class="logo-item"><img src="images/mountain-view-logo.png" alt="Partner 4">
+                    </div>
+                    <div class="logo-item"><img src="images/mountain-view-logo.png" alt="Partner 5">
+                    </div>
+                    <div class="logo-item"><img src="images/mountain-view-logo.png" alt="Partner 6">
                     </div>
                 </div>
             </div>
@@ -91,7 +79,8 @@
                         <i class="fas fa-drafting-compass"></i>
                     </div>
                     <h3>Architecture & Design</h3>
-                    <p>Comprehensive architectural design services from concept development to detailed construction documentation.</p>
+                    <p>Comprehensive architectural design services from concept development to detailed construction
+                        documentation.</p>
                 </div>
                 <div class="service-card">
                     <div class="card-icon">
@@ -119,7 +108,8 @@
                         <i class="fas fa-layer-group"></i>
                     </div>
                     <h3>Facades & Cladding</h3>
-                    <p>Custom facade solutions and cladding systems that enhance building performance and appearance.</p>
+                    <p>Custom facade solutions and cladding systems that enhance building performance and appearance.
+                    </p>
                 </div>
                 <div class="service-card">
                     <div class="card-icon">
@@ -136,58 +126,123 @@
     <section id="projects" class="projects">
         <div class="container">
             <h2>Featured Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="image-placeholder">
-                            <img src="images/project1.jpg" alt="Commercial Mall" style="width: 100%; height: 100%; object-fit: cover;">
-                            <i class="fas fa-shopping-center"></i>
-                            <span>Commercial Mall</span>
+            <div class="projects-slider-container">
+                <button class="slider-arrow prev" aria-label="Previous project">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="projects-slider">
+                    <div class="project-item">
+                        <div class="project-visual">
+                            <img src="images/project1.jpg" alt="Commercial Mall">
+                            <div class="project-overlay">
+                                <div class="overlay-content">
+                                    <h3>Commercial Mall</h3>
+                                    <p>A modern shopping center featuring premium retail spaces and entertainment
+                                        facilities.</p>
+                                    <a href="#" class="btn-small">View Details</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="project-info">
-                        <h3>Commercial Mall</h3>
-                        <p>A modern shopping center featuring premium retail spaces and entertainment facilities.</p>
+                    <div class="project-item">
+                        <div class="project-visual">
+                            <img src="images/project2.jpg" alt="Corporate Headquarters">
+                            <div class="project-overlay">
+                                <div class="overlay-content">
+                                    <h3>Corporate Headquarters</h3>
+                                    <p>Executive headquarters building with state-of-the-art facilities.</p>
+                                    <a href="#" class="btn-small">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <div class="project-visual">
+                            <img src="images/project3.jpg" alt="Architectural Facade">
+                            <div class="project-overlay">
+                                <div class="overlay-content">
+                                    <h3>Architectural Facade</h3>
+                                    <p>Stunning facade design featuring innovative materials.</p>
+                                    <a href="#" class="btn-small">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <div class="project-visual">
+                            <img src="images/project4.jpg" alt="Custom Woodwork">
+                            <div class="project-overlay">
+                                <div class="overlay-content">
+                                    <h3>Custom Woodwork</h3>
+                                    <p>Exquisite custom woodworking solutions for residential and commercial
+                                        applications.</p>
+                                    <a href="#" class="btn-small">View Details</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="image-placeholder">
-                            <img src="images/project2.jpg" alt="Corporate Headquarters" style="width: 100%; height: 100%; object-fit: cover;">
-                            <i class="fas fa-building-columns"></i>
-                            <span>Corporate Headquarters</span>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Corporate Headquarters</h3>
-                        <p>Executive headquarters building with state-of-the-art facilities and modern architecture.</p>
-                    </div>
+                <button class="slider-arrow next" aria-label="Next project">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <div class="products-wrapper">
+                <div class="products-text">
+                    <h2>Our Custom Woodwork</h2>
+                    <p>We specialize in creating bespoke, high-quality wooden products tailored to your exact
+                        specifications. From intricate architectural details to functional custom furniture, our master
+                        craftsmen combine traditional techniques with modern precision.</p>
+                    <p>Our offerings include custom cabinetry, luxury wall paneling, specialized doors, and unique
+                        artistic installations that bring warmth and elegance to any space.</p>
+                    <a href="#contact" class="btn btn-primary">Request a Quote</a>
                 </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="image-placeholder">
-                            <img src="images/project3.jpg" alt="Architectural Facade" style="width: 100%; height: 100%; object-fit: cover;">
-                            <i class="fas fa-wallpaper"></i>
-                            <span>Architectural Facade</span>
-                        </div>
+                <div class="products-slider-container">
+                    <button class="prod-slider-arrow prev" aria-label="Previous product">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="products-slider">
+                        <div class="prod-slide"><img src="images/project4.jpg" alt="Custom Woodwork 1"></div>
+                        <div class="prod-slide"><img src="images/project1.jpg" alt="Custom Woodwork 2"></div>
+                        <div class="prod-slide"><img src="images/project2.jpg" alt="Custom Woodwork 3"></div>
+                        <div class="prod-slide"><img src="images/project3.jpg" alt="Custom Woodwork 4"></div>
                     </div>
-                    <div class="project-info">
-                        <h3>Architectural Facade</h3>
-                        <p>Stunning facade design featuring innovative materials and sustainable architecture.</p>
-                    </div>
+                    <button class="prod-slider-arrow next" aria-label="Next product">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
                 </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="image-placeholder">
-                            <img src="images/project4.jpg" alt="Custom Woodwork" style="width: 100%; height: 100%; object-fit: cover;">
-                            <i class="fas fa-chair"></i>
-                            <span>Custom Woodwork</span>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Custom Woodwork</h3>
-                        <p>Exquisite custom woodworking solutions for residential and commercial applications.</p>
-                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Commitment Section -->
+    <section id="commitment" class="commitment-section">
+        <div class="container">
+            <h2 class="section-title">Our Commitment to Excellence</h2>
+            <p class="commitment-text">At Cairo International, we combine traditional craftsmanship with modern
+                innovation to deliver projects that stand the test of time. Our dedicated team of architects, engineers,
+                and craftsmen work collaboratively to ensure every detail is perfect.</p>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">200+</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">Client Satisfaction</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">150+</div>
+                    <div class="stat-label">Expert Staff</div>
                 </div>
             </div>
         </div>
@@ -239,7 +294,8 @@
                             <input type="text" id="subject" name="subject" placeholder="Subject" required>
                         </div>
                         <div class="form-group">
-                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5"
+                                required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary">Send Message</button>
                     </form>
@@ -254,40 +310,9 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <div class="logo">
-                        <i class="fas fa-building"></i>
-                        <span>Cairo International</span>
-                    </div>
-                    <p>Excellence in Architecture, Contracting, and Specialized Manufacturing since 2010.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#hero">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Contact Info</h4>
-                    <p><i class="fas fa-phone"></i> +20 100 000 0000</p>
-                    <p><i class="fas fa-envelope"></i> info@example.com</p>
-                    <p><i class="fas fa-map-marker-alt"></i> Cairo, Egypt</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Cairo International for Contracting & Architecture. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+    <div data-include="includes/footer.html"></div>
 
     <script src="script.js"></script>
 </body>
+
 </html>

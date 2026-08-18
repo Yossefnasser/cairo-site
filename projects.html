@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Projects - Cairo International for Contracting & Architecture</title>
+  <link rel="stylesheet" href="styles.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+  <div data-include="includes/navbar.html"></div>
+
+  <!-- Projects Header -->
+  <header class="projects-header">
+    <div class="container">
+      <h1>Our Portfolio</h1>
+      <p>Showcasing our commitment to architectural excellence and precision engineering across Egypt.</p>
+    </div>
+  </header>
+
+  <!-- Projects Gallery Section -->
+  <section id="projects-gallery" class="projects-gallery">
+    <div class="container">
+      <!-- Filter Controls -->
+      <div class="filter-controls">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="commercial">Commercial</button>
+        <button class="filter-btn" data-filter="residential">Residential</button>
+        <button class="filter-btn" data-filter="industrial">Industrial</button>
+        <button class="filter-btn" data-filter="woodwork">Custom Woodwork</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card" data-category="commercial">
+          <div class="project-image">
+            <img src="images/project1.jpg" alt="Commercial Mall">
+            <div class="project-card-overlay">
+              <a href="#" class="view-project-btn">View Details</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="category-tag">Commercial</span>
+            <h3>Commercial Mall</h3>
+            <p>A modern shopping center featuring premium retail spaces.</p>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card" data-category="commercial">
+          <div class="project-image">
+            <img src="images/project2.jpg" alt="Corporate Headquarters">
+            <div class="project-card-overlay">
+              <a href="#" class="view-project-btn">View Details</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="category-tag">Commercial</span>
+            <h3>Corporate Headquarters</h3>
+            <p>Executive headquarters building with state-of-the-art facilities.</p>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card" data-category="industrial">
+          <div class="project-image">
+            <img src="images/project3.jpg" alt="Architectural Facade">
+            <div class="project-card-overlay">
+              <a href="#" class="view-project-btn">View Details</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="category-tag">Industrial</span>
+            <h3>Architectural Facade</h3>
+            <p>Stunning facade design featuring innovative materials.</p>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card" data-category="woodwork">
+          <div class="project-image">
+            <img src="images/project4.jpg" alt="Custom Woodwork">
+            <div class="project-card-overlay">
+              <a href="#" class="view-project-btn">View Details</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="category-tag">Woodwork</span>
+            <h3>Custom Woodwork</h3>
+            <p>Exquisite custom woodworking solutions for luxury spaces.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div data-include="includes/footer.html"></div>
+
+  <div id="project-modal" class="project-modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <div class="modal-body">
+        <img src="" alt="" id="modal-img">
+        <div class="modal-text">
+          <span class="category-tag" id="modal-category"></span>
+          <h2 id="modal-title"></h2>
+          <p id="modal-desc"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
