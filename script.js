@@ -186,28 +186,9 @@ function initProductsSlider() {
 // Initialize products slider
 initProductsSlider();
 
-// Projects Slider Navigation
-const projectsSlider = document.querySelector('.projects-slider');
-const prevBtn = document.querySelector('.slider-arrow.prev');
-const nextBtn = document.querySelector('.slider-arrow.next');
-
-if (projectsSlider && prevBtn && nextBtn) {
-  const scrollAmount = 370; // project-item width (350px) + gap (20px)
-
-  prevBtn.addEventListener('click', () => {
-    projectsSlider.scrollBy({
-      left: -scrollAmount,
-      behavior: 'smooth'
-    });
-  });
-
-  nextBtn.addEventListener('click', () => {
-    projectsSlider.scrollBy({
-      left: scrollAmount,
-      behavior: 'smooth'
-    });
-  });
-}
+// Partners Logo Slider - CSS animation handles the infinite loop
+// The .logo-track already has animation: scroll 30s linear infinite in styles.css
+// No JavaScript needed for the basic loop functionality
 
 // Projects Page Filtering Logic
 function initProjectsFilter() {
