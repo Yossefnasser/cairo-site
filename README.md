@@ -21,6 +21,7 @@ This is a simple, professional static website showcasing Cairo International for
 - ✅ Mobile-friendly navigation
 - ✅ Contact form with WhatsApp integration
 - ✅ Placeholder project gallery
+- ✅ Dedicated Products page for made-to-order manufactured goods
 - ✅ SEO-friendly structure
 
 ## Local Development
@@ -100,11 +101,17 @@ This is a simple, professional static website showcasing Cairo International for
 
 ```
 cairo-international/
-├── index.html          # Main HTML file
-├── styles.css          # CSS styling
-├── script.js           # JavaScript functionality
-├── README.md           # This file
-└── (future assets)     # Images, etc.
+├── index.html            # Main HTML file
+├── about.html            # About page
+├── services.html         # Services page
+├── projects.html         # Projects gallery
+├── project-details.html  # Project detail template
+├── products.html         # Manufactured products catalog
+├── styles.css            # CSS styling
+├── script.js             # JavaScript functionality
+├── includes/             # Shared navbar & footer components
+├── images/               # Image assets
+└── README.md             # This file
 ```
 
 ## Customization

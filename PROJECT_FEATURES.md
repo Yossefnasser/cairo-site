@@ -21,6 +21,7 @@ A professional one-page static website for a construction/architecture company, 
 - **Partners Section**: Seamlessly looping logo slider showcasing company partners
 - **Services Section**: 6 service cards (Architecture & Design, General Contracting, Wood Manufacturing, Curtain Walls, Facades & Cladding, Commercial & Mall Projects)
 - **Projects Section**: Featured projects slider with image overlays and "View Details" buttons
+- **Products Page**: Dedicated `products.html` catalog for in-house manufactured, made-to-order products (wood doors & windows, cabinetry & millwork, furniture, facade & cladding systems) with category filters, detail modals, and request-a-quote CTAs
 - **Products Section**: Dedicated showcase for Custom Woodwork with a dedicated image slider and request quote CTA
 - **Commitment Section**: "Commitment to Excellence" section featuring a stats grid (Experience, Projects, Satisfaction, Staff)
 - **Contact Section**: Contact information, functional-looking contact form, and direct WhatsApp integration
@@ -34,6 +35,7 @@ A professional one-page static website for a construction/architecture company, 
 - **Fade-in Animations**: Intersection Observer API used to animate sections into view on scroll
 - **Projects Slider**: Smooth horizontal scrolling for featured projects
 - **Products Slider**: Auto-playing image slider for custom woodwork products with manual navigation controls
+- **Products Page Filters & Modal**: Category filtering and detail modals shared with the projects page via `script.js` (per-product copy via `data-details` attribute)
 
 ### ✅ Visual Elements
 - **Color Scheme**: Professional palette with brown accent colors (`#a67c52`) and deep navy/grey primary colors
@@ -92,6 +94,14 @@ A professional one-page static website for a construction/architecture company, 
    - Documented project structure
    - Updated `PROJECT_FEATURES.md` with full product audit
 
+6. **Products Page Launch** (Latest)
+   - Created dedicated `products.html` showcasing orderable manufactured products
+   - Added "Products" to navbar and footer navigation
+   - Moved Custom Woodwork out of the projects grid into the products catalog
+   - Extended `script.js` so filters and detail modals work on both pages
+   - Fixed homepage "VIEW PRODUCTS" CTA to link to `products.html`
+   - Added cross-link from the projects page to the products catalog
+
 ### ✅ Quality Assurance
 - **Cross-device Testing**: Verified on desktop, tablet, and mobile
 - **Browser Compatibility**: Tested on Chrome, Firefox, Safari, Edge
@@ -103,6 +113,7 @@ A professional one-page static website for a construction/architecture company, 
 
 ### ✅ Source Files
 - `index.html` - Main website structure
+- `products.html` - Manufactured products catalog page
 - `styles.css` - CSS styling and responsive design
 - `script.js` - JavaScript functionality
 - `README.md` - Deployment instructions

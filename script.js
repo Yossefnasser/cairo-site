@@ -216,8 +216,11 @@ function initProjectsFilter() {
   });
 }
 
-// Initialize filter and modal if on projects page
-if (window.location.pathname.includes('projects.html')) {
+// Initialize filter and modal on projects & products pages
+if (
+  window.location.pathname.includes('projects.html') ||
+  window.location.pathname.includes('products.html')
+) {
   initProjectsFilter();
   initProjectModal();
 }
@@ -241,7 +244,9 @@ function initProjectModal() {
       document.getElementById('modal-img').src = img;
       document.getElementById('modal-title').innerText = title;
       document.getElementById('modal-category').innerText = category;
-      document.getElementById('modal-desc').innerText = desc + " This is a detailed description of the project, highlighting the architectural challenges, the solutions implemented, and the final outcome. Our team ensured that every detail met the highest standards of quality and sustainability.";
+      const extraDetails = card.getAttribute('data-details') ||
+        "This is a detailed description of the project, highlighting the architectural challenges, the solutions implemented, and the final outcome. Our team ensured that every detail met the highest standards of quality and sustainability.";
+      document.getElementById('modal-desc').innerText = desc + " " + extraDetails;
 
       modal.style.display = 'flex';
       document.body.style.overflow = 'hidden';
