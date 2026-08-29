@@ -1,10 +1,10 @@
-# Cairo International for Contracting & Architecture - Static Website
+# Cairo International for Decoration and Construction - Static Website
 
 A professional one-page static website for a construction/architecture company, designed for testing deployment workflows on Cloudflare Pages.
 
 ## Project Overview
 
-This is a simple, professional static website showcasing Cairo International for Contracting & Architecture. The site features sections for the company overview, services, projects, and contact information.
+This is a simple, professional static website showcasing Cairo International for Decoration and Construction. The site features sections for the company overview, services, projects, and contact information.
 
 ## Technical Stack
 
@@ -57,7 +57,7 @@ This is a simple, professional static website showcasing Cairo International for
    - Go to [GitHub](https://github.com)
    - Click "New repository"
    - Name: `cairo-international`
-   - Description: "Static website for Cairo International for Contracting & Architecture"
+   - Description: "Static website for Cairo International for Decoration and Construction"
    - Make it public
    - Do NOT initialize with README (we'll add it later)
 

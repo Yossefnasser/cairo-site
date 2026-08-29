@@ -1,4 +1,4 @@
-# Cairo International for Contracting & Architecture - Project Features & Work Tracking
+# Cairo International for Decoration and Construction - Project Features & Work Tracking
 
 ## Project Overview
 A professional one-page static website for a construction/architecture company, designed for testing deployment workflows on Cloudflare Pages.
