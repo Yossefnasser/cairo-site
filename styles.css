@@ -3413,6 +3413,12 @@ html[dir="rtl"] .project-specs {
 .g-4c   { grid-column: 1 / span 4; }
 .g-4d   { grid-column: 5 / span 4; }
 .g-4e   { grid-column: 9 / span 4; }
+.g-8c   { grid-column: 1 / span 8; }
+
+/* Final chapter — breathing room between the tall image and the heading */
+.cs-final .cs-chapter-head {
+  margin-top: 3.5rem;
+}
 
 /* Project information */
 .cs-info-list {
@@ -3523,7 +3529,7 @@ html[dir="rtl"] .project-specs {
     gap: 2.25rem;
   }
 
-  .g-full, .g-8, .g-4, .g-4b, .g-8b, .g-4c, .g-4d, .g-4e {
+  .g-full, .g-8, .g-4, .g-4b, .g-8b, .g-4c, .g-4d, .g-4e, .g-8c {
     grid-column: 1 / -1;
   }
 
