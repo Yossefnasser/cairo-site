@@ -1,6 +1,32 @@
 // Mobile Menu Toggle
 let mobileMenu, navLinks;
 
+// Language toggle: point EN <-> AR counterparts at each other so switching
+// languages keeps the visitor on the same page. Pages without a published
+// counterpart (e.g. about.html, products.html) keep the default href from
+// the shared navbar include.
+const LANG_PAGE_MAP = {
+  'index.html': 'index-ar.html',
+  'index-ar.html': 'index.html',
+  'services.html': 'services-ar.html',
+  'services-ar.html': 'services.html',
+  'projects.html': 'projects-ar.html',
+  'projects-ar.html': 'projects.html',
+  'al-azbakeya-park-heritage-pergolas.html': 'al-azbakeya-park-heritage-pergolas-ar.html',
+  'al-azbakeya-park-heritage-pergolas-ar.html': 'al-azbakeya-park-heritage-pergolas.html'
+};
+
+function initLangToggle() {
+  const langToggle = document.querySelector('.lang-toggle');
+  if (!langToggle) return;
+
+  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+  const counterpart = LANG_PAGE_MAP[currentPage];
+  if (counterpart) {
+    langToggle.setAttribute('href', counterpart);
+  }
+}
+
 async function initDynamicElements() {
   mobileMenu = document.querySelector('.mobile-menu');
   navLinks = document.querySelector('.nav-links');
@@ -22,6 +48,8 @@ async function initDynamicElements() {
       });
     });
   }
+
+  initLangToggle();
 }
 
 // Initialize dynamic elements after HTML is included
@@ -216,10 +244,11 @@ function initProjectsFilter() {
   });
 }
 
-// Initialize filter and modal on projects & products pages
+// Initialize filter and modal on projects & products pages (EN + AR)
 if (
   window.location.pathname.includes('projects.html') ||
-  window.location.pathname.includes('products.html')
+  window.location.pathname.includes('products.html') ||
+  window.location.pathname.includes('projects-ar.html')
 ) {
   initProjectsFilter();
   initProjectModal();
@@ -234,6 +263,10 @@ function initProjectModal() {
 
   viewBtns.forEach(btn => {
     btn.addEventListener('click', (e) => {
+      // Links with a real destination navigate to the project page directly;
+      // placeholder links (href="#") open the quick-view modal.
+      if (btn.getAttribute('href') !== '#') return;
+
       e.preventDefault();
       const card = btn.closest('.project-card');
       const img = card.querySelector('img').src;
