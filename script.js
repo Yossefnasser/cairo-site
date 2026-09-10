@@ -12,8 +12,14 @@ const LANG_PAGE_MAP = {
   'services-ar.html': 'services.html',
   'projects.html': 'projects-ar.html',
   'projects-ar.html': 'projects.html',
+  'about.html': 'about-ar.html',
+  'about-ar.html': 'about.html',
+  'products.html': 'products-ar.html',
+  'products-ar.html': 'products.html',
   'al-azbakeya-park-heritage-pergolas.html': 'al-azbakeya-park-heritage-pergolas-ar.html',
-  'al-azbakeya-park-heritage-pergolas-ar.html': 'al-azbakeya-park-heritage-pergolas.html'
+  'al-azbakeya-park-heritage-pergolas-ar.html': 'al-azbakeya-park-heritage-pergolas.html',
+  'sinai-diorama-sharm-el-sheikh.html': 'sinai-diorama-sharm-el-sheikh-ar.html',
+  'sinai-diorama-sharm-el-sheikh-ar.html': 'sinai-diorama-sharm-el-sheikh.html'
 };
 
 function initLangToggle() {
@@ -248,7 +254,8 @@ function initProjectsFilter() {
 if (
   window.location.pathname.includes('projects.html') ||
   window.location.pathname.includes('products.html') ||
-  window.location.pathname.includes('projects-ar.html')
+  window.location.pathname.includes('projects-ar.html') ||
+  window.location.pathname.includes('products-ar.html')
 ) {
   initProjectsFilter();
   initProjectModal();
