@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# TODO: replace the domain below with the real production domain once connected
+Sitemap: https://cairo-international.com/sitemap.xml
